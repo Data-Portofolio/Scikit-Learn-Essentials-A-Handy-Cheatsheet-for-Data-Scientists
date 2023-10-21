@@ -1,4 +1,4 @@
-# scikit learn cheatsheet
+# Scikit-Learn Essentials: A Handy Cheatsheet for Data Scientists
 This is collection of machine learning cheat sheet 
 Scikit-learn (sklearn) is a popular Python library for machine learning and data analysis. It provides a wide range of functions and classes for various machine learning tasks, including classification, regression, clustering, dimensionality reduction, and more. Here's a list of some commonly used functions and classes in scikit-learn:
 
