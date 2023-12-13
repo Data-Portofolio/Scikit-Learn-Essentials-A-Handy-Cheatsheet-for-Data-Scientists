@@ -49,6 +49,7 @@
 Ini hanyalah gambaran singkat, dan setiap algoritma memiliki lebih banyak nuansa dan penerapan yang lebih mendalam. Pilihan algoritma tergantung pada jenis data dan masalah yang dihadapi.
 </details>
 
+
 # Scikit-Learn Essentials: A Handy Cheatsheet for Data Scientists
 This is collection of machine learning cheat sheet 
 Scikit-learn (sklearn) is a popular Python library for machine learning and data analysis. It provides a wide range of functions and classes for various machine learning tasks, including classification, regression, clustering, dimensionality reduction, and more. Here's a list of some commonly used functions and classes in scikit-learn:
@@ -88,7 +89,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `classification_report`: Generates a classification report with various metrics.
    - `roc_curve` and `roc_auc_score`: Receiver Operating Characteristic (ROC) analysis.
 <details>
-      
+      <summary>🔥 Underfitting and Overfitting </summary>
 ### Underfitting and Overfitting Explanation with Bias and Variance:
 
 ### Underfitting:
