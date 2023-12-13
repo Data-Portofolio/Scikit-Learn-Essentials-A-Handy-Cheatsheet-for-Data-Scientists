@@ -1,5 +1,5 @@
 <details>
-   
+   <summary>🤩 Supervised & Unsupervised Learning </summary>
 <br>
    
 ### Algoritma Supervised Learning:
