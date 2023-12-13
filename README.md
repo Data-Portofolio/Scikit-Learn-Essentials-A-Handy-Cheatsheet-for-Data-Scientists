@@ -1,5 +1,5 @@
 <details>
-   <summary>Supervised & Unsupervised Learning</summary>
+   
 <br>
    
 ### Algoritma Supervised Learning:
@@ -90,6 +90,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `roc_curve` and `roc_auc_score`: Receiver Operating Characteristic (ROC) analysis.
 <details>
       <summary>🔥 Underfitting and Overfitting </summary>
+   
 ### Underfitting and Overfitting Explanation with Bias and Variance:
 
 ### Underfitting:
