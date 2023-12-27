@@ -150,6 +150,74 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `confusion_matrix`: Generates a confusion matrix for classification.
    - `classification_report`: Generates a classification report with various metrics.
    - `roc_curve` and `roc_auc_score`: Receiver Operating Characteristic (ROC) analysis.
+<details>
+      <summary>🏀 Code </summary>
+<br>
+
+1. **`accuracy_score`:**
+   - Function: Computes classification accuracy.
+   - Module: `sklearn.metrics`
+   - Example:
+     ```python
+     from sklearn.metrics import accuracy_score
+
+     y_true = [0, 1, 1, 0, 1, 1]
+     y_pred = [0, 1, 0, 0, 1, 1]
+     accuracy = accuracy_score(y_true, y_pred)
+     ```
+
+2. **`mean_squared_error`:**
+   - Function: Calculates mean squared error for regression.
+   - Module: `sklearn.metrics`
+   - Example:
+     ```python
+     from sklearn.metrics import mean_squared_error
+
+     y_true = [3, -0.5, 2, 7]
+     y_pred = [2.5, 0.0, 2, 8]
+     mse = mean_squared_error(y_true, y_pred)
+     ```
+
+3. **`confusion_matrix`:**
+   - Function: Generates a confusion matrix for classification.
+   - Module: `sklearn.metrics`
+   - Example:
+     ```python
+     from sklearn.metrics import confusion_matrix
+
+     y_true = [1, 0, 1, 2, 1, 0, 1, 2]
+     y_pred = [0, 0, 2, 2, 1, 0, 1, 2]
+     cm = confusion_matrix(y_true, y_pred)
+     ```
+
+4. **`classification_report`:**
+   - Function: Generates a classification report with various metrics.
+   - Module: `sklearn.metrics`
+   - Example:
+     ```python
+     from sklearn.metrics import classification_report
+
+     y_true = [0, 1, 2, 2, 0, 1, 2, 2]
+     y_pred = [0, 0, 2, 2, 0, 2, 1, 2]
+     report = classification_report(y_true, y_pred)
+     ```
+
+5. **`roc_curve` and `roc_auc_score`:**
+   - Functions: Generate Receiver Operating Characteristic (ROC) curve and calculate Area Under the Curve (AUC) score.
+   - Module: `sklearn.metrics`
+   - Example:
+     ```python
+     from sklearn.metrics import roc_curve, roc_auc_score
+
+     y_true = [0, 1, 1, 0, 1, 0]
+     y_scores = [0.1, 0.8, 0.6, 0.2, 0.7, 0.4]
+     fpr, tpr, thresholds = roc_curve(y_true, y_scores)
+     auc_score = roc_auc_score(y_true, y_scores)
+     ```
+
+These functions are essential for evaluating the performance of machine learning models in classification and regression tasks. Adjust the examples based on your specific use case and data.
+</details>      
+
 <details align='center'>
       <summary>🔥 Underfitting and Overfitting </summary>
    
