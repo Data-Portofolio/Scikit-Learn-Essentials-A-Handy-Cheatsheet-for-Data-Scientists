@@ -61,6 +61,57 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `cross_val_score`: Performs k-fold cross-validation for model evaluation.
    - `GridSearchCV`: Conducts hyperparameter tuning using grid search.
    - `RandomizedSearchCV`: Conducts hyperparameter tuning using randomized search.
+     
+<details align='center'><summary>🏀<b>Code</b></summary>
+
+1. **`train_test_split`:**
+   - Function: Splits the dataset into training and testing sets.
+   - Module: `sklearn.model_selection`
+   - Example:
+     ```python
+     from sklearn.model_selection import train_test_split
+
+     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+     ```
+
+2. **`cross_val_score`:**
+   - Function: Performs k-fold cross-validation for model evaluation.
+   - Module: `sklearn.model_selection`
+   - Example:
+     ```python
+     from sklearn.model_selection import cross_val_score
+     from sklearn.linear_model import LogisticRegression
+
+     clf = LogisticRegression()
+     scores = cross_val_score(clf, X, y, cv=5)
+     ```
+
+3. **`GridSearchCV`:**
+   - Class: Conducts hyperparameter tuning using grid search.
+   - Module: `sklearn.model_selection`
+   - Example:
+     ```python
+     from sklearn.model_selection import GridSearchCV
+     from sklearn.svm import SVC
+
+     param_grid = {'C': [0.1, 1, 10], 'kernel': ['linear', 'rbf']}
+     clf = SVC()
+     grid_search = GridSearchCV(clf, param_grid, cv=5)
+     ```
+
+4. **`RandomizedSearchCV`:**
+   - Class: Conducts hyperparameter tuning using randomized search.
+   - Module: `sklearn.model_selection`
+   - Example:
+     ```python
+     from sklearn.model_selection import RandomizedSearchCV
+     from sklearn.ensemble import RandomForestClassifier
+
+     param_dist = {'n_estimators': [10, 100, 1000], 'max_depth': [None, 10, 20, 30]}
+     clf = RandomForestClassifier()
+     random_search = RandomizedSearchCV(clf, param_distributions=param_dist, n_iter=3, cv=5)
+     ```
+</details>
 
 2. **Supervised Learning:**
    - `LinearRegression`: Linear regression model for regression tasks.
