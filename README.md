@@ -223,10 +223,12 @@ Memahami dan menangani masalah bias dan varian sangat penting dalam pengembangan
    - `PCA`: Principal Component Analysis for feature extraction.
    - `RFE` (Recursive Feature Elimination): Selects features recursively based on model performance.
 
-<details>
-      <summary>🔥 Example:
- </summary>
-```python
+ <details>
+    <summary>🔥 Example:
+       </summary>
+       <br>
+    
+ ```python
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.feature_selection import SelectKBest, SelectPercentile, VarianceThreshold, RFE, SelectFromModel
@@ -300,9 +302,8 @@ print("Accuracy (RFE):", accuracy_rfe)
 print("Accuracy (SelectFromModel):", accuracy_sfm)
 ```
 
-![image](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/310324e8-ee8c-4462-8d49-815de8fda267)
-
-
+   ![image](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/310324e8-ee8c-4462-8d49-815de8fda267)
+</details>
 
 7. **Ensemble Methods:**
    - `VotingClassifier` and `VotingRegressor`: Combines multiple models for ensemble learning.
@@ -312,4 +313,4 @@ print("Accuracy (SelectFromModel):", accuracy_sfm)
 8. **Neural Network Interface:**
    - `MLPClassifier` and `MLPRegressor`: Multi-layer Perceptron models.
 
-This is not an exhaustive list, as scikit-learn offers many more functions and classes for various machine learning tasks. You can find more details and documentation on the official scikit-learn website: https://scikit-learn.org/stable/.
+
