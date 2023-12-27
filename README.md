@@ -345,8 +345,8 @@ Memahami dan menangani masalah bias dan varian sangat penting dalam pengembangan
    - `PCA`: Principal Component Analysis for feature extraction.
    - `RFE` (Recursive Feature Elimination): Selects features recursively based on model performance.
 
- <details align='center'>
-    <summary>🏹 Example:
+ <details>
+    <summary align='center'>🏹 Example:
        </summary>
        <br>
     
