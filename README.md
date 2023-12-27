@@ -63,7 +63,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `RandomizedSearchCV`: Conducts hyperparameter tuning using randomized search.
      
 <details>
-<summary align="center">🏀<b>Code</b>
+<summary align="center">🏀<i>Code</i>
 </summary>
 <br>
    
@@ -151,7 +151,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `classification_report`: Generates a classification report with various metrics.
    - `roc_curve` and `roc_auc_score`: Receiver Operating Characteristic (ROC) analysis.
 <details>
-      <summary align="center">🏀 <i>Code</i> </summary>
+      <summary align="center">🏀<i>Code</i> </summary>
 <br>
 
 1. **`accuracy_score`:**
