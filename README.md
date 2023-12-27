@@ -1,7 +1,7 @@
 # Scikit-Learn Essentials: A Handy Cheatsheet for Data Scientists
 
 <details>
-   <summary>🤩 Supervised & Unsupervised Learning </summary>
+   <summary>📊 Supervised & Unsupervised Learning </summary>
 <br>
    
 ### Algoritma Supervised Learning:
@@ -81,7 +81,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `StandardScaler`: Standardizes features to have mean 0 and variance 1.
    - `MinMaxScaler`: Scales features to a specified range, usually [0, 1].
       <details align="center">
-        <summary>🤩 Feature Scaling</summary>
+        <summary>📐 Feature Scaling</summary>
         <br>
          
        ![feature scaling](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/1f4caa61-d53e-458b-89df-246404b81dc2)
