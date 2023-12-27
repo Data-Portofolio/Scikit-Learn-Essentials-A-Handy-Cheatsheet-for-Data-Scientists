@@ -80,9 +80,11 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
 4. **Preprocessing:**
    - `StandardScaler`: Standardizes features to have mean 0 and variance 1.
    - `MinMaxScaler`: Scales features to a specified range, usually [0, 1].
-
-    ![feature scaling](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/1f4caa61-d53e-458b-89df-246404b81dc2)
-
+      <details>
+      <summary>🤩 Feature Scaling </summary>
+      <br>
+         
+       ![feature scaling](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/1f4caa61-d53e-458b-89df-246404b81dc2)
 
    - `OneHotEncoder`: Encodes categorical variables into one-hot vectors.
    - `LabelEncoder`: Encodes categorical labels into numerical values.
@@ -97,9 +99,9 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
 <details>
       <summary>🔥 Underfitting and Overfitting </summary>
    
-### Underfitting and Overfitting Explanation with Bias and Variance:
+### Underfitting and Overfitting Explanation with Bias and Variance
 
-### Underfitting:
+## Underfitting:
 
 1. **Brief Explanation:**
    - Occurs when the model is too simple to understand patterns in the training data.
@@ -118,7 +120,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
 4. **Bias:**
    - High bias indicates that the model is too simple and cannot represent the underlying patterns in the data.
 
-### Overfitting:
+## Overfitting
 
 1. **Brief Explanation:**
    - Occurs when the model is too complex and "memorizes" the training data, including irrelevant noise and variability.
@@ -138,7 +140,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
 4. **Variance:**
    - High variance indicates that the model is too sensitive to the training data and does not generalize well to new data.
 
-### Comparison:
+## Comparison
 
 - **Underfitting vs. Overfitting:**
   - Underfitting occurs when the model is too simple.
