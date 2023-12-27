@@ -96,7 +96,7 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `confusion_matrix`: Generates a confusion matrix for classification.
    - `classification_report`: Generates a classification report with various metrics.
    - `roc_curve` and `roc_auc_score`: Receiver Operating Characteristic (ROC) analysis.
-<details>
+<details align='center'>
       <summary>🔥 Underfitting and Overfitting </summary>
    
 ### Underfitting and Overfitting Explanation with Bias and Variance
