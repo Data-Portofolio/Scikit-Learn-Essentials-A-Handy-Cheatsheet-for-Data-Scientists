@@ -223,6 +223,87 @@ Memahami dan menangani masalah bias dan varian sangat penting dalam pengembangan
    - `PCA`: Principal Component Analysis for feature extraction.
    - `RFE` (Recursive Feature Elimination): Selects features recursively based on model performance.
 
+<details>
+      <summary>🔥 Example:
+ </summary>
+```python
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.feature_selection import SelectKBest, SelectPercentile, VarianceThreshold, RFE, SelectFromModel
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score
+from sklearn.svm import SVC
+
+# Load iris dataset as an example
+data = load_iris()
+X, y = data.data, data.target
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Standardize the features (optional but can be beneficial for some methods)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# 1. SelectKBest: Select the top k features based on univariate statistical tests
+k_best_selector = SelectKBest(k=2)
+X_train_kbest = k_best_selector.fit_transform(X_train, y_train)
+X_test_kbest = k_best_selector.transform(X_test)
+
+# 2. SelectPercentile: Select the top features based on a percentile of the highest scores
+percentile_selector = SelectPercentile(percentile=50)
+X_train_percentile = percentile_selector.fit_transform(X_train, y_train)
+X_test_percentile = percentile_selector.transform(X_test)
+
+# 3. VarianceThreshold: Remove low-variance features
+variance_threshold_selector = VarianceThreshold(threshold=0.1)
+X_train_variance = variance_threshold_selector.fit_transform(X_train)
+X_test_variance = variance_threshold_selector.transform(X_test)
+
+# 4. RFE (Recursive Feature Elimination): Recursively removes the least important features
+# Using a support vector machine (SVM) as the base estimator
+svm = SVC(kernel="linear")
+rfe_selector = RFE(estimator=svm, n_features_to_select=2)
+X_train_rfe = rfe_selector.fit_transform(X_train, y_train)
+X_test_rfe = rfe_selector.transform(X_test)
+
+# 5. SelectFromModel: Select features based on importance weights from a fitted model
+# Using a random forest classifier as the base estimator
+rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+sfm_selector = SelectFromModel(estimator=rf_model, threshold="mean")
+X_train_sfm = sfm_selector.fit_transform(X_train, y_train)
+X_test_sfm = sfm_selector.transform(X_test)
+
+# Example: Train and evaluate a classifier on the selected features
+def train_and_evaluate(X_train, X_test, y_train, y_test):
+    clf = RandomForestClassifier(n_estimators=100, random_state=42)
+    clf.fit(X_train, y_train)
+    y_pred = clf.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    return accuracy
+
+# Evaluate classifiers on different feature sets
+accuracy_kbest = train_and_evaluate(X_train_kbest, X_test_kbest, y_train, y_test)
+accuracy_percentile = train_and_evaluate(X_train_percentile, X_test_percentile, y_train, y_test)
+accuracy_variance = train_and_evaluate(X_train_variance, X_test_variance, y_train, y_test)
+accuracy_rfe = train_and_evaluate(X_train_rfe, X_test_rfe, y_train, y_test)
+accuracy_sfm = train_and_evaluate(X_train_sfm, X_test_sfm, y_train, y_test)
+
+# Print accuracies
+print("Accuracy (SelectKBest):", accuracy_kbest)
+print("Accuracy (SelectPercentile):", accuracy_percentile)
+print("Accuracy (VarianceThreshold):", accuracy_variance)
+print("Accuracy (RFE):", accuracy_rfe)
+print("Accuracy (SelectFromModel):", accuracy_sfm)
+```
+
+![image](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/310324e8-ee8c-4462-8d49-815de8fda267)
+
+
+
 7. **Ensemble Methods:**
    - `VotingClassifier` and `VotingRegressor`: Combines multiple models for ensemble learning.
    - `BaggingClassifier` and `BaggingRegressor`: Bagging ensemble methods.
