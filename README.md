@@ -80,6 +80,9 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
 4. **Preprocessing:**
    - `StandardScaler`: Standardizes features to have mean 0 and variance 1.
    - `MinMaxScaler`: Scales features to a specified range, usually [0, 1].
+
+     ![image](https://github.com/Data-Portofolio/Scikit-Learn-Essentials-A-Handy-Cheatsheet-for-Data-Scientists/assets/133883292/c8d83e4c-935f-4031-96aa-aff55605e512)
+
    - `OneHotEncoder`: Encodes categorical variables into one-hot vectors.
    - `LabelEncoder`: Encodes categorical labels into numerical values.
    - `Imputer`: Imputes missing values in datasets.
