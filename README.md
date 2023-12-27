@@ -1,7 +1,7 @@
 # Scikit-Learn Essentials: A Handy Cheatsheet for Data Scientists
 
 <details>
-   <summary>📊 Supervised & Unsupervised Learning </summary>
+   <summary>📈 Supervised & Unsupervised Learning </summary>
 <br>
    
 ### Algoritma Supervised Learning:
