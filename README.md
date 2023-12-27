@@ -62,8 +62,11 @@ Scikit-learn (sklearn) is a popular Python library for machine learning and data
    - `GridSearchCV`: Conducts hyperparameter tuning using grid search.
    - `RandomizedSearchCV`: Conducts hyperparameter tuning using randomized search.
      
-<details align='center'><summary>🏀<b>Code</b></summary><br>
-
+<details>
+<summary>🏀<b>Code</b>
+</summary>
+<br>
+   
 1. **`train_test_split`:**
    - Function: Splits the dataset into training and testing sets.
    - Module: `sklearn.model_selection`
